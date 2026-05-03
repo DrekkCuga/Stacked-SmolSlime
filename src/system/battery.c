@@ -102,7 +102,7 @@ static int divider_setup(void)
 		.buffer = &ddp->raw,
 		.buffer_size = sizeof(ddp->raw),
 		.oversampling = 7, // TODO: using R3 board, ADC is very noisy, are other boards okay?
-		.resolution = 14,
+		//.resolution = 14, //TODO SDK Fix
 		.calibrate = true,
 	};
 
@@ -132,17 +132,18 @@ static int divider_setup(void)
 	};
 
 	if (cfg->output_ohm != 0) {
-		accp->input_positive = iocp->channel; // >=sdk 3.2.0, SAADC_CH_PSELP_PSELP_AnalogInput0 does not match! Instead use NRF_SAADC_AIN0
+		accp->input_positive = 1 + iocp->channel;
+		//accp->input_positive = iocp->channel; // >=sdk 3.2.0, SAADC_CH_PSELP_PSELP_AnalogInput0 does not match! Instead use NRF_SAADC_AIN0 //TODO SDK Fix
 	} else {
 		accp->input_positive = 9; // SAADC_CH_PSELP_PSELP_VDD
 	}
 
 	if (iocp->channel == 12) { // VDDHDIV5
-		accp->input_positive = 128 + 4; // >=sdk 3.2.0, SAADC_CH_PSELP_PSELP_VDDHDIV5 does not match! Instead use NRF_SAADC_VDDHDIV5
+		//accp->input_positive = 128 + 4; // >=sdk 3.2.0, SAADC_CH_PSELP_PSELP_VDDHDIV5 does not match! Instead use NRF_SAADC_VDDHDIV5 //TODO SDK Fix
 		asp->oversampling = 2;
 		accp->acquisition_time = ADC_ACQ_TIME(ADC_ACQ_TIME_MICROSECONDS, 10);
 	}
-
+	asp->resolution = 14; //TODO SDK Fix
 #else /* CONFIG_ADC_var */
 #error Unsupported ADC
 #endif /* CONFIG_ADC_var */
