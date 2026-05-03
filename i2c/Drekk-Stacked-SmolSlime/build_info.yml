@@ -1,0 +1,56 @@
+cmake:
+  application:
+    configuration-dir: '/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime'
+    source-dir: '/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime'
+  board:
+    name: 'promicro_uf2'
+    path:
+     - '/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/nordic/promicro_uf2'
+    qualifiers: 'nrf52840/i2c'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/drekk/Documents/Code/VR-Trackers/nrf/dts/bindings'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/bindings'
+    files:
+     - '/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/nordic/promicro_uf2/promicro_uf2_i2c.dts'
+     - 'socs/nrf52840_i2c.overlay'
+    include-dirs:
+     - '/home/drekk/Documents/Code/VR-Trackers/nrf/include'
+     - '/home/drekk/Documents/Code/VR-Trackers/nrf/dts/common'
+     - '/home/drekk/Documents/Code/VR-Trackers/nrf/dts/riscv'
+     - '/home/drekk/Documents/Code/VR-Trackers/nrf/dts/arm'
+     - '/home/drekk/Documents/Code/VR-Trackers/nrf/dts'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/include'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/common'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/vendor'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/rx'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/x86'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/xtensa'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/sparc'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/riscv'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/posix'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/arm64'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/arm'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts/arc'
+     - '/home/drekk/Documents/Code/VR-Trackers/zephyr/dts'
+    user-files:
+     - 'socs/nrf52840_i2c.overlay'
+  kconfig:
+    files:
+     - '/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/nordic/promicro_uf2/promicro_uf2_i2c_defconfig'
+     - '/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/prj.conf'
+     - '/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/i2c/Drekk-Stacked-SmolSlime/zephyr/.config.sysbuild'
+    user-files:
+     - '/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/drekk/ncs/toolchains/c5be9c56c7/opt/zephyr-sdk'
+  vendor-specific:
+    nordic:
+      svdfile: '/home/drekk/Documents/Code/VR-Trackers/modules/hal/nordic/nrfx/mdk/nrf52840.svd'
+  zephyr:
+    version: '4.1.99'
+    zephyr-base: '/home/drekk/Documents/Code/VR-Trackers/zephyr'
+version: '0.1.0'

@@ -1,0 +1,36 @@
+# Available runners configured by board.cmake.
+runners:
+- nrfjprog
+- jlink
+- pyocd
+
+# Default flash runner if --runner is not given.
+flash-runner: nrfjprog
+
+# Default debug runner if --runner is not given.
+debug-runner: jlink
+
+# Common runner configuration values.
+config:
+  board_dir: /home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/nordic/promicro_uf2
+  # Build outputs:
+  elf_file: DrekkTracker.elf
+  hex_file: /home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/i2c/merged.hex
+  bin_file: DrekkTracker.bin
+  uf2_file: DrekkTracker.uf2
+  # Host tools:
+  gdb: /home/drekk/ncs/toolchains/c5be9c56c7/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb
+
+# Runner specific arguments
+args:
+  nrfjprog:
+    []
+
+  jlink:
+    - --dt-flash=y
+    - --device=nrf52840_xxaa
+    - --speed=4000
+  pyocd:
+    - --dt-flash=y
+    - --target=nrf52840
+    - --frequency=4000000

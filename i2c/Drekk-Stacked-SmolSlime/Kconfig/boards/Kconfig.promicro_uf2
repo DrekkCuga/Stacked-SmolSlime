@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/nordic/promicro_uf2/Kconfig.promicro_uf2"

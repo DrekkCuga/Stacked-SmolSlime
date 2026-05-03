@@ -1,0 +1,2 @@
+# Load Zephyr board defconfig descriptions.
+osource "/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/nordic/promicro_uf2/Kconfig.defconfig"

@@ -1,0 +1,2 @@
+osource "/home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/shields/*/Kconfig.shield"
+osource "/home/drekk/Documents/Code/VR-Trackers/nrf/boards/shields/*/Kconfig.shield"

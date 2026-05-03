@@ -1,0 +1,32 @@
+empty_file.o: \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/misc/empty_file.c \
+ /home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/nordic/promicro_uf2/promicro_uf2_i2c.dts \
+ /home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/boards/nordic/promicro_uf2/promicro_uf2.dts \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/dts/arm/nordic/nrf52840_qiaa.dtsi \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/dts/common/mem.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/dts/arm/nordic/nrf52840.dtsi \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/dts/arm/armv7-m.dtsi \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/dts/common/skeleton.dtsi \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/dts/vendor/nordic/nrf_common.dtsi \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/sys/util_macro.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/sys/util_internal.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/sys/util_loops.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/sys/util_listify.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/pinctrl/nrf-pinctrl.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/dts/common/freq.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/dts/arm/nordic/override.dtsi \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/adc/nrf-saadc-v3.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/adc/nrf-saadc-v2.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/adc/nrf-saadc.h \
+ /home/drekk/Documents/Code/VR-Trackers/zephyr/include/zephyr/dt-bindings/regulator/nrf5x.h \
+ socs/nrf52840_i2c.overlay

@@ -1,7 +1,7 @@
-default: Stacked-SmolSlime
-build_dir: C:/Users/Lyall/Documents/GitHub/Stacked-SmolSlime/i2c
+default: Drekk-Stacked-SmolSlime
+build_dir: /home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/i2c
 domains:
-  - name: Stacked-SmolSlime
-    build_dir: C:/Users/Lyall/Documents/GitHub/Stacked-SmolSlime/i2c/Stacked-SmolSlime
+  - name: Drekk-Stacked-SmolSlime
+    build_dir: /home/drekk/Documents/Code/VR-Trackers/Drekk-Stacked-SmolSlime/i2c/Drekk-Stacked-SmolSlime
 flash_order:
-  - Stacked-SmolSlime
+  - Drekk-Stacked-SmolSlime
